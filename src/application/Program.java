@@ -12,9 +12,10 @@ public class Program {
 		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
+		System.out.println("=== OPERATION FIND BY ID ===");
 		Seller seller = sellerDao.findById(4);
-		
 		System.out.println(seller);
+		System.out.println();
 		
 		
 		
