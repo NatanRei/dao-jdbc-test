@@ -41,6 +41,12 @@ public class Program {
 		System.out.println("Inserted! New id = " + newSeller.getId());
 		System.out.println();
 		
+		System.out.println("=== OPERATION UPDATE ===");
+		seller = sellerDao.findById(1);
+		seller.setName("NATAN");
+		sellerDao.update(seller);
+		System.out.println("Updated Done!");
+		System.out.println();
 		
 		
 	}
