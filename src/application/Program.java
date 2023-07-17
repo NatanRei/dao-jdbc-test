@@ -1,6 +1,7 @@
 package application;
 
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 import model.dao.DaoFactory;
@@ -28,10 +29,16 @@ public class Program {
 		System.out.println();
 		
 		System.out.println("=== OPERATION FIND ALL ===");
-		List<Seller> listAll = sellerDao.findAll();
-		for (Seller obj: listAll) {
+		list = sellerDao.findAll();
+		for (Seller obj: list) {
 			System.out.println(obj);
 		}
+		System.out.println();
+		
+		System.out.println("=== OPERATION INSERT ===");
+		Seller newSeller = new Seller(null, "Natan", "natan@ntnconsultoria.com.br", new Date(), 1000.0, department);
+		sellerDao.insert(newSeller);
+		System.out.println("Inserted! New id = " + newSeller.getId());
 		System.out.println();
 		
 		
