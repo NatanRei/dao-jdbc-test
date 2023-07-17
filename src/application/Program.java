@@ -48,6 +48,11 @@ public class Program {
 		System.out.println("Updated Done!");
 		System.out.println();
 		
+		System.out.println("=== OPERATION DELETE ===");
+		sellerDao.deleteById(3);
+		System.out.println("Deletion Done!");
+		System.out.println();
+		
 		
 	}
 
