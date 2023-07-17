@@ -1,4 +1,4 @@
-# Test of DAO jbdc
+# Test of DAO JDCB
 
 A simple implementation of DAO concepts
 
